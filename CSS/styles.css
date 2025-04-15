@@ -1,1 +1,270 @@
+.navbar-custom {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background-color: rgba(243, 218, 107, 0.6); 
+    border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-buttons li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+.nav-buttons li a:hover {
+    color: #dcb62f; /* Puedes cambiar este color si quieres */
+  }
+  
 
+
+.body {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    margin-top: 80px;
+}
+
+
+
+.titulo-principal,
+h1, h2, h3 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+
+
+.header-con-imagen {
+    background-image: url('../Imágenes/imagen-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    text-align: center;
+}
+  
+.header-con-imagen h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+main {
+    padding-top: 100px; 
+  }
+
+.carrusel-ajustado img {
+  max-height: 500px; 
+  object-fit: cover;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
+.section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+.cards-container.testimonios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+.card:hover {
+    transform: scale(1.03);
+  }
+  
+.testimonial {
+    font-style: italic;
+  }
+  
+@media (max-width: 900px) {
+    .cards-container.testimonios {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+@media (max-width: 600px) {
+    .cards-container.testimonios {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+.historia {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+.seccion-historia {
+    background-color: #dcca42;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  
+.seccion-historia > * {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.imagen-historia-contenedor {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.imagen-historia-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+  
+
+
+  
+.imagen-historia {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+  }
+
+.sucursales {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+.sucursal {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+.sucursal h3 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  
+.imagenes-sucursal {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+.imagenes-sucursal img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+.mapa {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+	
+.boton-llegar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#64bae8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+.boton-llegar:hover {
+    background-color: #206dc5;
+  }
+  
+.seccion-contacto {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+.formulario .form-label {
+    font-weight: bold;
+  }
+
+
+.footer {
+    background-color: #dcca42;
+    color: rgb(2, 2, 2);
+    padding: 40px 0;
+  }
+  
+.footer a {
+    color: #191202;
+    text-decoration: none;
+  }
+  
+.footer a:hover {
+    text-decoration: underline;
+  }
